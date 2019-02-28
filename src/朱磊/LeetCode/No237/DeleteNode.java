@@ -1,4 +1,4 @@
-package 朱磊.LeetCode.No123;
+package LeetCode.No237;
 
 /**
  * Created by zl on 2019/2/19.
@@ -13,4 +13,9 @@ public class DeleteNode {
         node.next = node.next.next;
     }
 
+    public class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int x) { val = x; }
+   }
 }

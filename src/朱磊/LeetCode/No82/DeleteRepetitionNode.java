@@ -1,5 +1,10 @@
 package LeetCode.No82;
 
+/**
+ * @Author: zl
+ * @Date: 2019/2/28 20:35
+ * @Description:
+ */
 public class DeleteRepetitionNode {
 
     public ListNode unRecursionSolution(ListNode head) {
@@ -7,7 +12,7 @@ public class DeleteRepetitionNode {
             return head;
 
         ListNode dummyHead = new ListNode(0);   // 建立一个虚拟节点
-        dummyHead.next = head;  // 让头节点指向虚拟节点的一个节点
+        dummyHead.next = head;  // 让头节点指向虚拟节点的下一个节点（在原本的链表的头节点前放置一个虚拟节点，便于使用）
         ListNode pre = dummyHead;   // 前驱节点的引用
         ListNode cur = dummyHead.next;  // 当前节点的引用
         boolean isDelete = false;   // 标识位，用来判断是否需要被删除。true表示需要

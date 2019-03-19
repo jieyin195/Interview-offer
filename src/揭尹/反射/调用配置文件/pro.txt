@@ -1,0 +1,2 @@
+className = 揭尹.反射.调用配置文件.Student
+methodName = show

@@ -2,7 +2,7 @@ package 揭尹.深克隆和浅克隆;
 
 /**
  * Created by Jline on 2019/2/26.
- * 浅克隆：创建一个新对象，属性中引用的其他对象也会被克隆，不再指向原有对象地址。
+ * 深克隆：创建一个新对象，属性中引用的其他对象也会被克隆，不再指向原有对象地址。
  */
 
 class Customer2 implements Cloneable{

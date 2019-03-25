@@ -1,4 +1,4 @@
-package Arithmetic.DynamicProgramming;
+package 朱磊.Arithmetic.DynamicProgramming;
 
 import java.util.Scanner;
 

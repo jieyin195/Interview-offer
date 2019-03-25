@@ -1,4 +1,4 @@
-package JavaNote.Java集合.对象在List_Set集合中的排序问题;
+package 朱磊.JavaNote.Java集合.对象在List_Set集合中的排序问题;
 
 /**
  * @Author: zl

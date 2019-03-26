@@ -1,4 +1,4 @@
-package JavaNote.Java集合.对象在Map集合中的排序问题;
+package 朱磊.JavaNote.Java集合.对象在Map集合中的排序问题;
 
 import java.util.*;
 

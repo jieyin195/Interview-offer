@@ -7,7 +7,6 @@ import java.util.TreeSet;
  * Created by Jline on 2019/3/26.
  */
 public class Souton {
-    static TreeSet<Integer> treeSet = new TreeSet<>();
     public static void main( String[] args ) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -15,20 +14,45 @@ public class Souton {
         for (int i = 0; i < n; i++) {
             arr[i]=sc.nextInt();
         }
-        int cout = 0;
-        System.out.println(digui(arr,n-1,0,cout));
+        baoli(arr);
+        //System.out.println();
     }
 
-    public static int digui(int[] arr,int n,int flag,int cout){
-        if(n<=0) {
-            treeSet.add(cout);
+    /**
+     * 递归
+     * @param end
+     * @param num
+     * @return
+     */
+    public static int jump(int end, int[] num) {
+        if (end == 0)
             return 0;
-        }
-        int s=arr[flag];
-        while(s>0){
-            digui(arr,n-s,flag+s,++cout);
-            s--;
-        }
-        return treeSet.first();
+        int i = 0;
+        while (num[i] < (end - i))
+            i++;
+        return 1+jump(i, num);
     }
+
+    public static void baoli(int[] arr){
+        int step=0;
+        int out =0;
+        int step_max=0;
+        while(true){
+            if(arr.length==1)
+                break;
+            step++;
+            for (int i = 0; i <= out; i++) {
+                if(arr[i]+i>step_max)
+                    step_max=arr[i]+i;
+            }
+            out=step_max;
+            if(out+1>=arr.length)
+                break;
+
+        }
+        System.out.println(step);
+    }
+
+
+
 }

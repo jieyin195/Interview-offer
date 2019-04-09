@@ -1,4 +1,4 @@
-package 朱磊.Arithmetic.DynamicProgramming;
+package 朱磊.Arithmetic.DynamicProgramming.最大路径;
 
 import java.util.Scanner;
 

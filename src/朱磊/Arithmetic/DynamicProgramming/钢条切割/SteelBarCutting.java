@@ -1,4 +1,4 @@
-package 朱磊.Arithmetic.DynamicProgramming;
+package 朱磊.Arithmetic.DynamicProgramming.钢条切割;
 
 /**
  * @Author: zl

@@ -11,34 +11,34 @@ public class ThreadTicket implements Runnable{
         /**
          * 方法一：同步代码块
          */
-//        while(true){
-//            synchronized (this){
-//                if(ticket>0){
+        while(true){
+            synchronized (this){
+                if(ticket>0){
 //                    try {
 //                        Thread.sleep(100);
 //                    } catch (InterruptedException e) {
 //                        e.printStackTrace();
 //                    }
-//                    System.out.println(Thread.currentThread().getName()+":"+ticket--+"票");
-//                }
-//            }
-//        }
+                    System.out.println(Thread.currentThread().getName()+":"+ticket--+"票");
+                }
+           }
+        }
         /**
          * 方法二：同步方法
          */
-        while(true){
-            cellTicket();
-        }
+//        while(true){
+//            cellTicket();
+//        }
     }
 
-    private synchronized void cellTicket() {
-        if(ticket>0){
-            try {
-                Thread.sleep(100);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            System.out.println(Thread.currentThread().getName()+":"+ticket--+"票");
-        }
-    }
+//    private synchronized void cellTicket() {
+//        if(ticket>0){
+//            try {
+//                Thread.sleep(100);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//            System.out.println(Thread.currentThread().getName()+":"+ticket--+"票");
+//        }
+//    }
 }

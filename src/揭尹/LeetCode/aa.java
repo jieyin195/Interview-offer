@@ -1,4 +1,4 @@
-package 揭尹;
+package 揭尹.LeetCode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -17,35 +17,6 @@ public class aa{
             }
     }
             public static List<List<Integer>> threeSum(int[] nums) {
-//                Arrays.sort(nums);
-//                List<List<Integer>> Biglist = new ArrayList<List<Integer>>();
-//                int n = nums.length;
-//                for(int i = 0 ; i < n-2 ;i ++){
-//                    if(i>0 && nums[i]==nums[i-1])
-//                        continue;
-//                    int sum = 0 - nums[i];
-//                    for(int j =i+1; j< n-1 ; j++){
-//                        for(int z = j+1 ; z<n ; z++){
-//                           if(nums[j]+nums[z]==sum){
-//                               Biglist.add(Arrays.asList(nums[i],nums[j],nums[z]));
-//                               if(nums[j]!=nums[z]){
-//                                   while(i<n-1&&nums[i]==nums[i+1])
-//                                       i++;
-//                                   while(j<n-1&&nums[j]==nums[j+1])
-//                                       j++;
-//                                   while(z<n-1&&nums[z]==nums[z+1])
-//                                       z++;
-//                               }else{
-//                                   while(z<n-1&&nums[z]==nums[z+1])
-//                                       z++;
-//                                   j=z;
-//                                   break;
-//                               }
-//                           }
-//                        }
-//                    }
-//                }
-//                return Biglist;
             Arrays.sort(nums);
             List<List<Integer>> ls = new ArrayList<>();
 

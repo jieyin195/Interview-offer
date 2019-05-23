@@ -1,6 +1,6 @@
-package 揭尹.我总结的问题;
+package 揭尹.字符串;
 
-public class Main {
+public class 字符串拼接 {
 
     final String str1 = "HelloWorld";
     final String str2 = "Hello" + "World";
@@ -14,13 +14,13 @@ public class Main {
         System.out.println(str1+str1 == str3+str3);
         System.out.println(str1 == str3);
     }
-    public Main() {
+    public 字符串拼接() {
         str4 = "HelloWorld";
         System.out.println(str1 == str4);
     }
 
     public static void main(String[] args) {
-        new Main();
+        new 字符串拼接();
 
     }
 }

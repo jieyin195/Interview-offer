@@ -28,7 +28,6 @@ public class Constructors {
         //1.加载Class对象
         Class clazz = Class.forName("揭尹.反射.构造方法.Student");
 
-
         //2.获取所有公有构造方法
         System.out.println("**********************所有公有构造方法*********************************");
         Constructor[] conArray = clazz.getConstructors();

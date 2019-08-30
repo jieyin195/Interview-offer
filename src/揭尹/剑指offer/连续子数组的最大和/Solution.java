@@ -13,7 +13,15 @@ package 揭尹.剑指offer.连续子数组的最大和;
  * 返回它的最大连续子序列的和，你会不会被他忽悠住？(子向量的长度至少是1)
  */
 public class Solution {
-//    public int FindGreatestSumOfSubArray(int[] array) {
-//
-//    }
+    public int FindGreatestSumOfSubArray(int[] array) {
+        //数组角标0先记录最大值
+        int max = array[0];
+        int res = array[0];
+        for (int i = 1; i < array.length; i++) {
+             res  = Math.max(res+array[i],array[i]);
+             max = Math.max(res,max);
+        }
+        return max;
+
+    }
 }

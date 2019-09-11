@@ -17,27 +17,28 @@ public class Solution {
     Queue<Integer> queue2 = new LinkedList<>();
 
     public void push( int node ) {
-        if(queue2.isEmpty())
-            queue1.add(node);
-        else if(queue1.isEmpty())
-                queue2.add(node);
+        if(!queue1.isEmpty())
+            queue1.offer(node);
+        else
+            queue2.offer(node);
     }
 
     public int pop() {
-        if (queue2.isEmpty()) {
-            while (queue1.size() > 1) {
-                queue2.add(queue1.poll());
-
+        if(!queue1.isEmpty()){
+            int size=queue1.size();
+            for (int i = 0; i < size-1; i++) {
+                queue2.offer(queue1.poll());
             }
             return queue1.poll();
-        } else if(queue1.isEmpty()){
-            while (queue2.size() > 1) {
-                queue1.add(queue2.poll());
+        }else if (!queue2.isEmpty())
+            {
+            int size=queue2.size();
+            for (int i = 0; i < size - 1; i++) {
+                queue1.offer(queue2.poll());
             }
             return queue2.poll();
-        }else{
-            throw new RuntimeException("数据不存在，无法删除!");
-        }
+        }else
+            throw new RuntimeException("删除异常");
     }
 
 }

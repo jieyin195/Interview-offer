@@ -23,7 +23,7 @@ public class Solution {
         Stack<Integer> stack = new Stack<>();
         ListNode pHead = listNode;
         while(pHead!=null){
-            stack.add((Integer) pHead.val);
+            stack.add(pHead.val);
             pHead=pHead.next;
         }
         while(!stack.isEmpty()){

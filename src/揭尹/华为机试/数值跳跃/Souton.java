@@ -38,7 +38,6 @@ public class Souton {
         int out =0;
         int step_max=0;
         while(true){
-
             step++;
             for (int i = 0; i <= out; i++) {
                 if(arr[i]+i>step_max)

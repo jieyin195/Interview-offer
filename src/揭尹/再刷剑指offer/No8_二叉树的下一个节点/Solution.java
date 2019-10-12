@@ -39,7 +39,7 @@ public class Solution {
             }
             pNode=pNode.next;
         }
-        return pNode;
+        return null;
 
     }
 }

@@ -38,10 +38,9 @@ public class Solution {
     }
 
     private static ListNode digui( ListNode head ) {
-        if(head==null )
+        if (head == null||head.next==null){
             return head;
-        if(head.next==null)
-            return head;
+        }
         ListNode reverNode =ReverseList(head.next);
         //reverNode在head.next上。return之后就没了
         head.next.next=head;

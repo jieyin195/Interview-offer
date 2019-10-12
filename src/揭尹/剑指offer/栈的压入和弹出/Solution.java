@@ -17,6 +17,9 @@ import java.util.Stack;
 
 public class Solution {
     public static boolean IsPopOrder(int [] pushA,int [] popA) {
+        /**
+         * 错误答案
+         */
         Stack<Integer> stack = new Stack<>();
         int count=0;
         for (int i = 0; i < pushA.length; i++) {
@@ -42,7 +45,7 @@ public class Solution {
     public static void main( String[] args ) {
         int[] pushA={1,2,3,4,5};
         int[] popA={4,5,3,2,1};
-        int[] popB={4,3,5,1,2};
+        int[] popB={4,3,2,5,1};
         System.out.println(IsPopOrder(pushA,popB));
     }
 }

@@ -25,7 +25,7 @@ public class Solution {
         if(l>=r)
             return true;
         int i =r-1;
-        while(i>l&&sequence[i]>sequence[r]) i--;
+        while(i>=l&&sequence[i]>sequence[r]) i--;
         for (int j = i; j >=l ; j--) {
             if(sequence[j]>sequence[r]) return false;
         }

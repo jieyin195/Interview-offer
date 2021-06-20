@@ -13,12 +13,13 @@ package 揭尹.JVM之初尝类加载.非法向前引用变量;
 
     static {
         i = 0;
-        //System.out.println(i);
+//        System.out.println(i);
     }
     static int i=1;
 }
 public class Demo{
     public static void main( String[] args ) {
         new Test();
+        System.out.println(Test.i);
     }
 }

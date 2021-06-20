@@ -15,7 +15,7 @@ class subClass extends supClass{
     static {
         System.out.println("subClass");
     }
-    //static int value=11;1去·   11
+//    static int value=11;
 }
 public class subAndsup {
     public static void main( String[] args ) {

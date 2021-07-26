@@ -17,7 +17,7 @@ import java.util.Stack;
 public class Solution {
     public  static ArrayList<ArrayList<Integer>> Print( TreeNode root) {
         ArrayList<ArrayList<Integer>> lists = new ArrayList<>();
-        if(root!=null)
+        if(root==null)
             return lists;
         Stack<TreeNode> stack1 = new Stack<>();
         Stack<TreeNode> stack2 = new Stack<>();

@@ -16,7 +16,6 @@ public class Solution {
         ArrayList<Integer> list = new ArrayList<>();
         int left=0;
         int right=array.length-1;
-
         while(left<right){
             if(array[left]+array[right]==sum){
                 list.add(array[left]);

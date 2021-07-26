@@ -23,7 +23,7 @@ public class Solution {
 
     private boolean hasPathCore( char[] matrix, int rows, int cols, int i, int j, boolean[] visited, char[] str, int k ) {
         int index = i * cols + j;
-        if (i < 0 || j < 0 || i >= rows || j >= cols || matrix[index] != str[k] || visited[index] == true)
+        if (i < 0 || j < 0 || i >= rows || j >= cols || matrix[index] != str[k] || visited[index])
             return false;
         if (k == str.length - 1)
             return true;

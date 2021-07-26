@@ -1,6 +1,10 @@
 package 揭尹.再刷剑指offer.No17_打印1到最大的n位数;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 /**
  * \* Created with IntelliJ IDEA.

@@ -50,7 +50,7 @@ public class Solution1 {
         return list;
     }
 
-    //非递归中序
+    //非递归后序
     public static ArrayList<Integer> postOrder( TreeNode root ){
         ArrayList<Integer> list = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();

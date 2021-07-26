@@ -11,7 +11,7 @@ package 揭尹.再刷剑指offer.No11_旋转数组的最小数字;
  */
 public class Solution {
     public static int min(int[] data){
-        if(data.length==0||data==null)
+        if(data.length==0)
             return 0;
         int left=0;
         int right=data.length-1;
